@@ -2,5 +2,5 @@ using UnityEngine;
 
 public interface IItem
 {
-    void User(GameObject target);
+    void Use(GameObject target);
 }
