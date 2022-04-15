@@ -448,7 +448,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.41852477, y: 0.3411648, z: -0.17335865, w: 0.82364464}
+  m_LocalRotation: {x: 0.41852474, y: 0.34116474, z: -0.17335862, w: 0.82364464}
   m_LocalPosition: {x: -8, y: 16, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -548,7 +548,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994616383}
-  m_LocalRotation: {x: 0.41852477, y: 0.3411648, z: -0.17335865, w: 0.82364464}
+  m_LocalRotation: {x: 0.41852474, y: 0.34116474, z: -0.17335862, w: 0.82364464}
   m_LocalPosition: {x: -8, y: 16, z: -8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -815,6 +815,24 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &1046773120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046773117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5344531f9c6510f4bb5cd853e8d5112d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fireTransform: {fileID: 0}
+  muzzleFlashEffect: {fileID: 0}
+  shellEjectEffect: {fileID: 0}
+  gunData: {fileID: 0}
+  ammoRemain: 100
+  magAmmo: 0
 --- !u!1001 &1253943905
 PrefabInstance:
   m_ObjectHideFlags: 0
