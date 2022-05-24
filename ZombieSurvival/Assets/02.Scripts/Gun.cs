@@ -13,6 +13,7 @@ public class Gun : MonoBehaviour
         Reloading  // 재장전 중
     }
 
+    // 읽기 전용 자동 구현 프로퍼티
     public State state { get; private set; } // 현재 총의 상태
 
     public Transform fireTransform; // 탄알이 발사될 위치
@@ -122,12 +123,12 @@ public class Gun : MonoBehaviour
      private IEnumerator ShotEffect(Vector3 hitPosition)
     {
         // 총구 화염 효과 재생
-        muzzleFlashEffect.Play();
+        muzzleFlashEffect.Play(); // 중첩되면 가장 마지막만 출력
         // 탄피 배출 효과 재생
         shellEjectEffect.Play();
 
         // 총격 소리 재생
-        gunAudioPlayer.PlayOneShot(gunData.shotClip);
+        gunAudioPlayer.PlayOneShot(gunData.shotClip); // 중첩되어도 동시 출력 가능
 
         // 선의 시작점은 총구의 위치
         bulletLineRenderer.SetPosition(0, fireTransform.position);
