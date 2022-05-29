@@ -18,6 +18,8 @@ public class PlayerHealth : LivingEntity
     private PlayerMovement playerMovement; // 플레이어 움직임 컴포넌트
     private PlayerShooter playerShooter; // 플레이어 슈터 컴포넌트
 
+    private float oriHealth; // 기존 체력값
+
     private void Awake() {
         // 사용할 컴포넌트 가져오기
         playerAnimator = GetComponent<Animator>();
