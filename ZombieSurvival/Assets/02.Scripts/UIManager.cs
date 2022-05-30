@@ -6,9 +6,12 @@ using UnityEngine.UI; // UI 관련 코드
 public class UIManager : MonoBehaviour
 {
     // 싱글톤 접근용 프로퍼티
-    public static UIManager instance {
-        get {
-            if (m_instance == null) {
+    public static UIManager instance
+    {
+        get
+        {
+            if (m_instance == null)
+            {
                 m_instance = FindObjectOfType<UIManager>();
             }
 
@@ -23,27 +26,32 @@ public class UIManager : MonoBehaviour
     public GameObject gameoverUI; // 게임오버 시 활성화할 UI
 
     // 탄알 텍스트 갱신
-    public void UpdateAmmoText(int magAmmo, int remainAmmo) {
+    public void UpdateAmmoText(int magAmmo, int remainAmmo)
+    {
         ammoText.text = magAmmo + "/" + remainAmmo;
     }
 
     // 점수 텍스트 갱신
-    public void UpdateScoreText(int newScore) {
+    public void UpdateScoreText(int newScore)
+    {
         scoreText.text = "Score : " + newScore;
     }
 
     // 적 웨이브 텍스트 갱신
-    public void UpdateWaveText(int waves, int count) {
+    public void UpdateWaveText(int waves, int count)
+    {
         waveText.text = "Wave : " + waves + "\nEnemy Left : " + count;
     }
 
     // 게임오버 UI 활성화
-    public void SetActiveGameoverUI(bool active) {
+    public void SetActiveGameoverUI(bool active)
+    {
         gameoverUI.SetActive(active);
     }
 
     // 게임 재시작
-    public void GameRestart() {
+    public void GameRestart()
+    {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
