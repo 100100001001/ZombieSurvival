@@ -120,7 +120,7 @@ public class Gun : MonoBehaviour
     }
 
     // 발사 이펙트와 소리를 재생하고 탄알 궤적을 그림
-     private IEnumerator ShotEffect(Vector3 hitPosition)
+    private IEnumerator ShotEffect(Vector3 hitPosition)
     {
         // 총구 화염 효과 재생
         muzzleFlashEffect.Play(); // 중첩되면 가장 마지막만 출력
